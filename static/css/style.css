@@ -19,7 +19,11 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	background: #092756;
 	color: #fff;
+<<<<<<< HEAD
 	font-size: 14px;
+=======
+	font-size: 18px;
+>>>>>>> 2cd3cceea58a166043e1bc9a6372945d2aeeb871
 	text-align:center;
 	letter-spacing:1.2px;
 	background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
@@ -34,7 +38,11 @@ body {
 	position: absolute;
 	top: 40%;
 	left: 50%;
+<<<<<<< HEAD
 	margin: -200px 0 0 -200px;
+=======
+	margin: -150px 0 0 -150px;
+>>>>>>> 2cd3cceea58a166043e1bc9a6372945d2aeeb871
 	width:400px;
 	height:400px;
 }
