@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Forecasting Renewable Energy Generation</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+ <div class="login">
+	<h1>Forecasting Renewable Energy Generation</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	 
+    <input type="integer" name="Traffic_Conditions" placeholder="Traffic Conditions" required="required"/>
+    <input type="integer" name="Number_of_Packages" placeholder="Number of Packages" required="required"/>
+		<input type="float" name="Distance_(miles)" placeholder="Distance in Miles" required="required"/>
+		<input type="integer" name="fog" placeholder="Fog" required="required"/>
+    <input type="integer" name="rain" placeholder="Rain" required="required"/>
+		<input type="integer" name="snow" placeholder="Snow" required="required"/>
+    <input type="integer" name="hail" placeholder="Hail" required="required"/>
+		<input type="integer" name="month_of_delvery" placeholder="Month of Delvery" required="required"/>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{prediction_result}}
+ </div>
+</body>
+</html>
