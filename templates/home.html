@@ -2,27 +2,49 @@
 <html >
 <head>
   <meta charset="UTF-8">
+<<<<<<< HEAD
+  <title>Forecasting Renewable Energy Generation</title>
+=======
   <title>Mexico</title>
+>>>>>>> 2cd3cceea58a166043e1bc9a6372945d2aeeb871
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<<<<<<< HEAD
+</head>
+<body>
+ <div class="login">
+	<h1>Forecasting Renewable Energy Generation</h1>
+=======
   
 </head>
 <body>
  <div class="login">
 	<h1>Mexico Home Prices</h1>
+>>>>>>> 2cd3cceea58a166043e1bc9a6372945d2aeeb871
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
     	 
+<<<<<<< HEAD
+    <input type="integer" name="Traffic_Conditions" placeholder="Traffic Conditions" required="required"/>
+    <input type="integer" name="Number_of_Packages" placeholder="Number of Packages" required="required"/>
+		<input type="float" name="Distance_(miles)" placeholder="Distance in Miles" required="required"/>
+		<input type="integer" name="fog" placeholder="Fog" required="required"/>
+    <input type="integer" name="rain" placeholder="Rain" required="required"/>
+		<input type="integer" name="snow" placeholder="Snow" required="required"/>
+    <input type="integer" name="hail" placeholder="Hail" required="required"/>
+		<input type="integer" name="month_of_delvery" placeholder="Month of Delvery" required="required"/>
+=======
     <input type="text" name="property_type" placeholder="Property Type" required="required"/>
     <input type="text" name="borough" placeholder="Borough" required="required"/>
 		<input type="float" name="surface_covered_in_m2" placeholder="Surface Covered" required="required"/>
 		<input type="float" name="price_per_m2" placeholder="Price" required="required"/>
     <input type="float" name="lat" placeholder="Lat" required="required"/>
 		<input type="float" name="lon" placeholder="Lon" required="required"/>
+>>>>>>> 2cd3cceea58a166043e1bc9a6372945d2aeeb871
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
