@@ -33,13 +33,13 @@ def predict():
 
         # Define raw data
         raw_data = {
-                    'property_type': values[0],
-                    'borough': values[1],
-                    'surface_covered_in_m2': values[2],
-                    'price_per_m2': values[3],
-                    'lat': values[4],
-                    'lon': values[5]
-                    }
+            'property_type': values[0],
+            'borough': values[1],
+            'surface_covered_in_m2': values[2],
+            'price_per_m2': values[3],
+            'lat': values[4],
+            'lon': values[5]
+        }
         
         # Create function to predict the raw data
         def predict_data(raw_data):
@@ -48,9 +48,10 @@ def predict():
             return data_predict[0]
         
         # Perform prediction
-        prediction = predict_data(raw_data).round(2)
+        prediction = predict_data(raw_data)
 
-        return render_template('home.html', prediction_result=f'The Price of the {raw_data["property_type"]} is: ${prediction}')
+        return render_template('home.html', prediction_result=
+                               f'The Price of the {raw_data["property_type"]} is: ${prediction:.2f}')
 
 
 
